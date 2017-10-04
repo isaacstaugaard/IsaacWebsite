@@ -1,4 +1,6 @@
-/* Using Eric Mey'ers reset from http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126   */
+/** ------------------------------------------------------------------- CSS RESET FROM ERIC MEYER -------------------------------------------------------------------- **/
+
+/* Using Eric Meyer's reset from http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126   */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,7 +49,7 @@ table {
 strong, b, strong *, b * { font-weight: bold !important; }
 em, i, em *, i * { font-style: italic !important; }
 
-/* My css stuff */
+/** -------------------------------------------------------------------- MY CSS --------------------------------------------------------------------------------------------------- **/
 
 body, html {
 	height: 100%;
@@ -56,16 +58,13 @@ body, html {
 	color: #777;
 }
 
-.homeImg {
+/* --------------------- CSS for "home page" ------------------------- */
+.homePage {
 	position: relative;
 	opacity: 0.9;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-}
-
-.homeImg {
 	background-image: url("homepage.jpg");
 	height: 100%;
 }
@@ -79,7 +78,7 @@ body, html {
 	color: #000;
 }
 
-.homeCaption span.spanCaption1 {
+#captionName {
 	color: #fff;
 	padding: 18px;
 	font-size: 60px;
@@ -87,7 +86,7 @@ body, html {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-.homeCaption span.spanCaption2 {
+#captionTitle {
 	color: #fff;
 	padding: 18px;
 	font-size: 20px;
@@ -102,20 +101,6 @@ body, html {
 	width: 100%;
 	text-align: center;
 	color: #000;
-}
-
-
-.learnMore span.spanLearnMore {
-	color: #fff;
-	padding: 18px;
-	font-size: 20px;
-	letter-spacing: 2px;
-}
-
-.lmImg {
-	color: #fff;
-	height: 50px;
-	width: 50px;
 }
 
 .round {
@@ -180,6 +165,18 @@ body, html {
 
 .round:hover #arrow4 {
     transform: rotate(-225deg);
+}
+
+/* -------------------------------- CSS for second page ----------------------------- */
+
+.secondPage {
+	position: relative;
+	/* opacity: .9; */
+	background-position: center;
+	/*background-repeat: no-repeat; */
+	background-size: cover;
+	background-color: #fff;
+	height: 100%;
 }
 
 	
