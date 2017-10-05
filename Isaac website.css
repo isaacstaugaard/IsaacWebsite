@@ -171,12 +171,126 @@ body, html {
 
 .secondPage {
 	position: relative;
-	/* opacity: .9; */
 	background-position: center;
-	/*background-repeat: no-repeat; */
 	background-size: cover;
 	background-color: #fff;
 	height: 100%;
 }
 
-	
+.image-circle {
+	position: absolute;
+	border-radius:100%/100%;
+	top: 16%;
+	left: 72%;
+	width: 25%;
+	height: 65%;
+	border:1px solid #021a40;
+}
+
+.aboutMeText {
+	position: absolute;
+	color: #000;
+}
+
+#amt1 {
+	position: relative;
+	left: 25%;
+	padding-top: 12%;
+	font-size: 45px;
+	letter-spacing: 2px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#amt2 {
+	position: relative;
+	top: 30%;
+	left: 25%;
+	font-size: 20px;
+}
+
+#amt3 {
+	position: relative;
+	top: 30%;
+	left: 25%;
+	font-size: 20px;
+}
+
+/* -------------------------- CSS for third page --------------------------------- */
+
+.thirdPage {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-color: #888;
+	height: 100%;
+}
+
+.titleText {
+	position: relative;
+	left: 0;
+	top: 10%;
+	width: 100%;
+	text-align:center;
+	color: #0f0;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+.projectsText {
+	position: absolute;
+	color: #000;
+}
+
+#project1 {
+	position: relative;
+	left: 5%;
+	padding-top: 0;
+	font-size: 45px;
+	letter-spacing: 2px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.projectSubtext {
+	position: relative;
+	width: 100%;
+	left: 0;
+	padding-top: 0;
+	font-size: 15px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	word-wrap: break-word;
+	max-width: 90%;
+	white-space: normal;
+	overflow: auto;
+}
+
+#project2 {
+	position: relative;
+	left: 5%;
+	font-size: 45px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	padding-top: 8%;
+}
+
+#project3 {
+	position: relative;
+	left: 5%;
+	font-size: 45px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	padding-top: 8%;
+}
+
+/* -------------------------- CSS for fourth page --------------------------------- */
+
+.fourthPage {
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-color: #aaa;
+	height: 100%;
+}
+
+
+
+
+
+
