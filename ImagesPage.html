@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<!-- HEAD -->
 	<head>
 		<!-- I'm going to use the standard utf-8 charset -->
 		<meta charset="utf-8">
 		<!-- This links the css file to my html file -->
-		<link rel="stylesheet" href="Isaac website.css">
+		<link rel="stylesheet" href="HomePage.css">
 		<!-- This links the javascript file to my html file --> 
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-
 		<script type="text/javascript" src="src/redist/when.js"></script>
 		<script type="text/javascript" src="src/core.js"></script>
 		<script type="text/javascript" src="src/graphics.js"></script>
@@ -19,64 +17,15 @@
 		<script type="text/javascript" src="src/areacorners.js"></script>
 		<script type="text/javascript" src="src/scale.js"></script>
 		<script type="text/javascript" src="src/tooltip.js"></script>
+		<script src="HomePage.js"></script>
 		<!-- This is the title of the page (what appears on the tab) -->
-		<title>Isaac Staugaard</title>
-
+		<title>Isaac's Images</title>
 	</head>
 	
-	<!-- BODY -->
-	<body>
-		
-		<!-- Home Page -->
-		<div class="homePage" >
-			<div class="homeCaption">
-				<span id="captionName"><strong>Isaac Staugaard</strong> </span><br>
-				<span id="captionTitle">Software Developer </span>
-			</div>
-			<div class="learnMore">
-				<div class="round">
-					<span class="arrows" id="arrow1"></span>
-					<span class="arrows" id="arrow2"></span>
-					<span class="arrows" id="arrow3"></span>
-					<span class="arrows" id="arrow4"></span>
-				</div>	
-			</div>
-		</div>
-		
-		<!-- Second Page -->
-		<div class="secondPage" >
-			<div class="about">
-				<span id="image1"><img class= "image-circle" src="images/isaac2.jpg"></span>
-				<span class="aboutMeText">
-					<h1 id="amt1">Hello, I'm Isaac</h1>
-					<h2 id="amt2">I graduated in 2017 from University of California Santa Barbara with a BS in Computer Science.</h2>
-					<h3 id="amt3">I like puppies and sports.</h3>
-				</span>		
-			</div>
-		</div>
-		
-		<!-- Third page --> 
-		<div class="thirdPage">
-			<div class="projects">
-				<span class="titleText">
-					<h1 id="p3title"><strong><em>Projects</em></strong></h1>
-				</span>
-				<span class="projectsText">
-					<h1 id="project1">Operating Systems Project
-						<p class="projectSubtext"> ASDF ASDF ASDF ASDF ADSF ASDF ADSF ASDF ASDF A course project with 1 other classmate to implement a virtual operating system from scratch.  The main topics included learning process management, CPU scheduling, synchronization, memory management, etc</p>
-					</h1>
-					<h2 id="project2">Fleak
-						<p class="projectSubtext"> ASDF ASDF ASDF ASDF ASDFA SDFAS DFASDF ASDF ASDF ASDF ASDF A personal project with 4 team members.  Google / Citrix IO HACKATHON 3rd place. A location based free and for sale iOS app. </p>
-					</h2>
-					<h3 id="project3">Compiler Project</h3>
-				</span>
-			</div>
-		</div>
-		
-		<!-- Fourth page --> 
-		<div class="fourthPage">
+	<body> 
+
+	<div class="imagePage">
 			<div class="imageMap">
-					
 				<div id="map_demo" style="width:920px; height:1000px;">
 					<div style="width:720px; border:0; overflow: hidden; float:left;">
 						<img style="width:720px;border:0;" id="usa_image" src="images/usa_map_720.png" usemap="#usa" >
@@ -90,8 +39,6 @@
 					
 				</div>
 
-
-
 				<script type="text/javascript">
 					if (window.Zepto) {
 						jQuery = Zepto;
@@ -101,9 +48,7 @@
 							}
 						} (jQuery));
 					}
-
 					$(document).ready(function () {
-
 						var $statelist, $usamap, ratio,
 						mapsterConfigured = function () {
 							// set html settings values
@@ -167,19 +112,18 @@
 								},
 								]
 						};
-
+						
 						function styleCheckbox(selected, $checkbox) {
 							var nowWeight = selected ? "bold" : "normal";
 							$checkbox.closest('div').css("font-weight", nowWeight);
 						}
-						
+
 						function addCheckBoxes(items) {
 							var item, selected;
 							$statelist.children().remove();
 							for (var i = 0; i < items.length; i++) {
 								selected = items[i].isSelected();
 								item = $('<div><input type="checkbox" name="' + items[i].key + '"' + (selected ? "checked" : "") + '><span class="sel" key="' + items[i].key + '">' + items[i].value + '</span></div>');
-
 								$statelist.append(item);
 							}
 							$statelist.find('span.sel').unbind('click').bind('click', function (e) {
@@ -193,7 +137,6 @@
 								styleCheckbox(selected, $(this));
 							});
 						}
-
 
 						$statelist = $('#statelist');
 						$usamap = $('#usa_image');
@@ -244,16 +187,12 @@
 										item=item.add(this);
 										return false;
 									}
-
 								});
 								return item;
-
 							}
-
 							function getFillOptions(el) {
 								var new_options,
 									val = getSelected($(el).find("option")).val();
-
 								if (val > "0") {
 									new_options = {
 										altImage: 'images/usa_map_720_alt_' + val + '.jpg',
@@ -267,21 +206,17 @@
 								}
 								return new_options;
 							}
-
 							function getNewOptions() {
 								var options,
 									render_highlight = getFillOptions($('#highlight_style')),
 									render_select = getFillOptions($('#select_style'));
-
 								options = $.extend({},
 									default_options,
 									{
 										render_select: render_select,
 										render_highlight: render_highlight
 									});
-
 								return options;
-
 							}
 							$("#highlight_style, #select_style").bind("change", function (e) {
 								e.preventDefault();
@@ -326,18 +261,13 @@
 							});
 
 						}
-
 						bindlinks();
-						
 						$usamap.mapster(default_options);
-
 
 					});
 
-
 						   // Utility functions
 						   // If you are copying code you probably won't need these.
-
 
 						   var utils = {};
 						   // Tells if an element is completely visible. if the 2nd parm is true, it only looks at the top.
@@ -350,7 +280,6 @@
 								   useWindow = true;
 							   }
 
-
 							   if (useWindow) {
 								   docViewTop = $(container).scrollTop();
 								   elemTop = elem.offset().top;
@@ -361,20 +290,17 @@
 							   docViewBottom = docViewTop + $(container).height();
 							   elemBottom = elemTop + elem.height();
 
-
 							   if (topOnly) {
 								   return elemTop >= docViewTop && elemTop <= docViewBottom;
 							   } else {
 								   return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom));
 							   }
 						   };
-
 						   utils.centerOn = function ($container, $element) {
 							   $container.animate({
 								   scrollTop: $element.position().top - ($container.height() / 2)
 							   }, 'slow');
 						   };
-
 				</script>
 
 				<map id="usa_image_map" name="usa">
@@ -471,13 +397,10 @@
 					<area href="https://en.wikipedia.org/wiki/Oklahoma" state="OK" full="Oklahoma" shape="poly" coords="272,248,264,248,260,248,260,248,260,256,275,257,298,258,296,275,296,288,296,289,299,292,301,293,302,293,302,291,303,293,305,293,305,291,307,293,306,295,309,296,311,296,314,296,316,298,317,296,320,297,322,299,323,299,323,301,324,302,326,300,327,300,329,300,329,302,333,304,334,303,335,300,336,300,337,302,340,302,343,303,345,304,347,303,347,301,350,301,351,302,353,300,354,300,355,302,358,302,359,300,360,300,362,302,364,304,366,304,368,305,368,278,367,270,367,264,366,259,365,254,365,251,356,251,322,251,290,249,272,248">
 					<area href="https://en.wikipedia.org/wiki/Kansas" state="KS" full="Kansas" shape="poly" coords="365,251,356,251,322,251,290,249,272,248,275,200,291,201,320,203,352,203,356,203,359,205,361,205,362,206,362,208,360,209,360,210,362,213,363,215,365,216,366,225,365,251">
 					<area href="https://en.wikipedia.org/wiki/Louisiana" state="LA" full="Louisiana" shape="poly" coords="437,357,437,356,436,353,433,350,434,345,434,344,432,344,426,345,409,346,408,344,409,338,411,334,415,328,414,326,415,326,416,324,414,323,414,321,413,318,413,314,404,314,391,314,374,314,374,321,375,329,376,331,377,334,378,338,381,341,381,344,382,344,381,350,379,354,380,356,380,358,380,363,378,365,379,368,382,367,388,366,395,369,400,370,403,369,405,370,407,371,408,369,406,368,404,368,401,367,406,366,407,366,410,366,410,368,410,370,414,370,416,371,415,372,414,373,415,374,421,377,424,376,425,374,426,374,428,372,428,373,429,375,428,376,428,377,431,375,432,373,433,373,431,372,431,371,431,370,433,370,434,369,434,369,440,374,441,374,443,374,444,375,446,373,446,372,445,372,443,370,438,369,436,368,437,366,438,366,439,365,437,365,437,365,440,365,441,362,440,361,440,359,439,359,437,361,437,362,434,362,434,361,435,359,437,358,437,357">
-
-					</map>				
+					</map>		
 				</div>
 			</div>
-				
-		<!-- Extra -->
-	<!-- <p> <strong>Hello this is extra text to test the full size webpage</strong> </p> -->
+			
 	</body>
-
-</html> 
+	
+</html>

@@ -60,6 +60,49 @@ body, html {
     overflow-x: hidden;
 }
 
+/* Navigation at the top */
+/*.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  position: fixed;
+    width: 100%;
+} */
+
+#nav_bar {
+	top: 0;
+	z-index: 100;
+	position: fixed;
+	width: 100%;
+	
+	border: 0;
+	border-radius: 0px;
+	margin-bottom: 0;
+    height: 30px;
+	background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+	
+}
+.nav_links {
+	padding-top:25px;
+    text-align: right;
+    width: 95%;
+	margin: 0;
+}
+
+.nav_links li {
+	display: inline;
+    margin-top: 20px;
+}
+.nav_links li a {
+	padding: 0 30px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.nav_links li a:hover{
+	color: #cccccc;
+}
+
 /* --------------------- CSS for "home page" ------------------------- */
 .homePage {
 	position: relative;
@@ -290,10 +333,6 @@ body, html {
 	background-color: #aaa;
 	height: 100%;
 }
-
-
-
-
 
 
 
