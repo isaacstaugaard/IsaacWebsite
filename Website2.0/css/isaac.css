@@ -28,7 +28,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-	color: #18BC9C;
+	color: black;
 	outline: none; 
 }
 h1,
@@ -41,6 +41,7 @@ h6 {
 	font-weight: 700;
 	text-transform: uppercase; 
 }
+
 hr.star-light,
 hr.star-primary {
 	max-width: 400px;
@@ -68,10 +69,10 @@ hr.star-light:after {
 	background-color: transparent;
 }
 hr.star-primary {
-	border-color: #2C3E50;
+	border-color: black;
 }
 hr.star-primary:after {
-	color: #2C3E50;
+	color: black;
 	background-color: white; 
 }
 .img-centered {
@@ -85,7 +86,8 @@ section {
 }
 section.success {
 	color: white;
-	background: #18BC9C;
+	/* background: #18BC9C; */
+	background: white;
 }
 
 @media (max-width: 767px) {
@@ -142,14 +144,15 @@ section.success {
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
 	font-family: 'Satisfy';
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #222222; 
 }
+
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-	color: Blue; 
+	color: Blue;
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
@@ -194,14 +197,17 @@ section.success {
 	#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
 	#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
 		color: black; 
+		border-bottom:3px solid #444444;
 	}
 	#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
 	#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
 		background-color: #ADD8E6;
 		border-radius: 100;
 		color: #222222; 
+		border-bottom:3px solid #000000;
 	} 
 }
+
 
 #homeContainer {				
 	position: relative;
@@ -320,29 +326,57 @@ section.success {
     transform: rotate(-225deg);
 }
 							
-.about-me-text{
-    color: #000000;
-}
 .about-me-black{
+	text-align:center;
 	color: #000000;
 	font-weight: 400;
 }
 #aboutContainer {
 	background-color: white;
 	border-bottom:3px solid #000000;
+	color: black;
+}
+.skills-black{
+	text-align:center;
+	color: #000000;
+	font-weight: 400;
 }
 #skillsContainer {
 	background-color:white;
 	border-bottom: 3px solid #000000;
 }
+.projects-black{
+	text-align:center;
+	color: #000000;
+	font-weight: 400;
+}
 #projectsContainer {
 	background-color:white;
 	border-bottom: 3px solid #000000;
+}
+.contact-black{
+	text-align:center;
+	color: #000000;
+	font-weight: 400;
 }
 #contactContainer {
 	background-color:white;
 	border-bottom: 3px solid #000000;
 }
+.other-black{
+	text-align:center;
+	color: #000000;
+	font-weight: 400;
+}
+#otherContainer {
+	color: black;
+}
+.other-links {
+	color: #ADD8E6;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 30px;
+}
+	
 #footerContainer {
 	background-color:white;
 }
