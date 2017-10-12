@@ -117,72 +117,93 @@ section.success {
 }
 
 #mainNav {
-  border-color: #343434;
-  background-color: white; 
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s; }
-  #mainNav .navbar-brand {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #BE1C93;
-    font-family: 'Satisfy'; }
-    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #BE1C93; }
-  #mainNav .navbar-toggle {
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #222222; }
-  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
-  #mainNav .navbar-nav > li.nav-item > a.nav-link {
-    font-family: 'Satisfy';
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #222222; }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-      color: #BE1C93; }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #BE1C93 !important;
-      background-color: transparent; }
-      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
-      #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-        background-color: transparent; }
-  @media (min-width: 992px) {
-    #mainNav {
-      border-color: rgba(255, 255, 255, 0.3);
-      background-color: transparent; }
-      #mainNav .navbar-brand {
-        color: rgba(255, 255, 255, 0.7); }
-        #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-          color: white; }
-      #mainNav .navbar-nav > li.nav-item > a.nav-link,
-      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-        color: rgba(255, 255, 255, 0.7); }
-        #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-        #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-          color: white; }
-      #mainNav.navbar-shrink {
-        border-color: rgba(34, 34, 34, 0.05);
-        background-color: white; }
-        #mainNav.navbar-shrink .navbar-brand {
-          font-size: 16px;
-          color: orange; }
-          #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-            color: #BE1C93; }
-        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
-        #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
-          color: #222222; }
-          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
-          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: #BE1C93; } }
+	border-color: #343434;
+	background-color: white; 
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s; 
+}
+#mainNav .navbar-brand {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: black;
+	font-family: 'Satisfy'; 
+}
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+	color: blue; 
+}
+#mainNav .navbar-toggle {
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #222222; 
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
+#mainNav .navbar-nav > li.nav-item > a.nav-link {
+	font-family: 'Satisfy';
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #222222; 
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+	color: Blue; 
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+	color: blue !important;
+	background-color: #ADD8E6;
+	border-radius: 100;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+	background-color: transparent;
+}
+@media (min-width: 992px) {
+	#mainNav {
+		border-color: rgba(255, 255, 255, 0.3);
+		background-color: transparent; 
+	}
+	#mainNav .navbar-brand {
+		color: rgba(255, 255, 255, 0.7); 
+	}
+	#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+		color: white; 
+	}
+	#mainNav .navbar-nav > li.nav-item > a.nav-link,
+	#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+		color: rgba(255, 255, 255, 0.7); 
+	}
+	#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+	#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+		color: white;
+	}
+	#mainNav.navbar-shrink {
+		border-color: rgba(34, 34, 34, 0.05);
+		background-color: white; 
+	}
+	#mainNav.navbar-shrink .navbar-brand {
+		font-size: 18px;
+		color: black; 
+	}
+	#mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+		color: blue; 
+	}
+	#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+	#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+		color: black; 
+	}
+	#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+	#mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+		background-color: #ADD8E6;
+		border-radius: 100;
+		color: #222222; 
+	} 
+}
 
-						
-.homePage {
+#homeContainer {				
 	position: relative;
 	opacity: 0.9;
 	background-position: center;
@@ -191,7 +212,7 @@ section.success {
 	background-image: url("images/homepage.jpg");
 	height: 100%;
 	width: 100%;
-	border:1px solid #000000;
+	border-bottom:3px solid #000000;
 }
 
 #captionName {
@@ -298,51 +319,7 @@ section.success {
 .round:hover #arrow4 {
     transform: rotate(-225deg);
 }
-			
-			
-			
-			
-			
-			
-/* header{
-	padding-top: 100px;
-	padding-bottom: 50px;
-	text-align: center;
-	color: white;
-	background-image: url("images/homepage.jpg");
-	background-size: cover;
-}
-header .intro-text {
-    position: relative;
-    width: 100%;
-	padding: 175px 15px;
-}
-header .intro-text .name {
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 2em;
-	font-weight: 400;
-	display: block;
-	text-transform: uppercase; 
-}
-header .intro-text .skills {
-	font-size: 1.25em;
-	font-weight: 300; 
-}
-@media (min-width: 768px) {
-	header {
-		padding-top: 200px;
-		padding-bottom: 100px;
-		height: 100%;
-	}
-    header .intro-text .name {
-		font-size: 4.75em; 
-	}
-    header .intro-text .skills {
-		font-size: 1.75em; 
-	} 
-}
-*/
-
+							
 .about-me-text{
     color: #000000;
 }
@@ -350,10 +327,25 @@ header .intro-text .skills {
 	color: #000000;
 	font-weight: 400;
 }
-#about {
+#aboutContainer {
 	background-color: white;
+	border-bottom:3px solid #000000;
 }
-
+#skillsContainer {
+	background-color:white;
+	border-bottom: 3px solid #000000;
+}
+#projectsContainer {
+	background-color:white;
+	border-bottom: 3px solid #000000;
+}
+#contactContainer {
+	background-color:white;
+	border-bottom: 3px solid #000000;
+}
+#footerContainer {
+	background-color:white;
+}
 #portfolio .portfolio-item {
 	right: 0;
 	margin: 0 0 15px; 
