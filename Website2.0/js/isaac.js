@@ -25,8 +25,6 @@
     target: '#mainNav',
     offset: 54
   });
-
-  // Collapse the navbar when page is scrolled
   
   // Collapse the navbar when page is scrolled
   $(window).scroll(function() {
@@ -47,5 +45,8 @@
       $(this).removeClass("floating-label-form-group-with-focus");
     });
   });
+  
+  // Initialize WOW.js Scrolling Animations
+    new WOW().init();
 
 })(jQuery); // End of use strict

@@ -12,14 +12,15 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<!-- Plugin CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/isaac.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/isaac.css" rel="stylesheet">
 
   </head>
 
@@ -60,7 +61,7 @@
 	<!-- Home Page Section -->
 	<div class="homePage" id="homeContainer" >
 		<span class="block" id="captionName"><strong>Isaac Staugaard</strong> </span><br>
-		<hr class="star-light" id="captionLine">
+		<hr class="s-shape-light" id="captionLine">
 		<span class="block" id="captionTitle">Software Developer </span>
 		<a href="#aboutContainer">
 			<div class="round">
@@ -77,11 +78,11 @@
     <section class="success" id="aboutContainer">
       <div class="container">
         <div class="text-center">
-			<h2 class="about-me-black">About Me</h2>
-        <hr class="star-primary">
+			<h2 class="section-text-black">About Me</h2>
+        <hr class="s-shape-dark" id="hr-lines">
         <div class="row">
           <div class=".col-lg-6 .col-md-4 text-center">
-		    <p class="about-me-text">
+		    <p id="about-me-text">
               Hi, my name is Isaac Staugaard.&nbsp;&nbsp; I'm a software developer who received my B.S. in Computer Science from University of California at Santa Barbara in 2017. &nbsp;&nbsp;
 			  I am currently looking for work in either San Francisco, CA, or Santa Monica, CA. &nbsp;&nbsp; 
 			</p> 
@@ -96,8 +97,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="skills-black">Skills</h2>
-					<hr class="star-primary">
+                    <h2 class="section-text-black">Skills</h2>
+					<hr class="s-shape-dark" id="hr-lines">
                 </div>
             </div>
         </div>
@@ -105,10 +106,9 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-server wow bounceIn text-primary"></i>
+                        <i class="fa fa-4x fa-server wow bounceInLeft text-primary"></i>
                         <h3>Languages</h3>
                         <ul>
-						<br>
                             <li>C/C++</li>
                             <li>Python</li>
                             <li>Java</li>
@@ -118,10 +118,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-laptop wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <i class="fa fa-4x fa-laptop wow bounceInLeft text-primary" data-wow-delay=".25s"></i>
                         <h3>Web Design</h3>
                         <ul>
-						<br>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>JavaScript</li>
@@ -130,10 +129,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-gears wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <i class="fa fa-4x fa-gears wow bounceInLeft text-primary" data-wow-delay=".5s"></i>
                         <h3>Other</h3>
                         <ul>
-						<br>
 							<li>Windows / Linux</li>
                             <li>Git | Github</li>
                             <li>Visual Studio | Eclipse </li>
@@ -147,8 +145,8 @@
     <!-- Portfolio Grid Section -->
     <section id="projectsContainer">
       <div class="container">
-        <h2 class="projects-black">Projects</h2>
-        <hr class="star-primary">
+        <h2 class="section-text-black">Projects</h2>
+        <hr class="s-shape-dark" id="hr-lines">
         <div class="row">
           <div class="col-sm-4 portfolio-item">
             <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
@@ -217,8 +215,8 @@
     <!-- Contact Section -->
     <section id="contactContainer">
       <div class="container">
-        <h2 class="projects-black">Contact Me</h2>
-        <hr class="star-primary">
+        <h2 class="section-text-black">Contact Me</h2>
+        <hr class="s-shape-dark" id="hr-lines">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -267,9 +265,9 @@
     <section class="success" id="otherContainer">
       <div class="container">
 			<div class="text-center">
-				<h2 class="projects-black">Other</h2>
-				<hr class="star-primary">
-				<p> <a class="other-links" href="../Old Website/FoodPage.html">FOOD </a> <br> <a class="other-links" href="../Old Website/ImagesPage.html">IMAGES</a> </p>
+				<h2 class="section-text-black">Other</h2>
+				<hr class="s-shape-dark" id="hr-lines">
+				<p> <a class="other-links" href="../Old Website/FoodPage.html">FOOD </a> <br> <br> <a class="other-links" href="../Old Website/ImagesPage.html">IMAGES</a> </p>
 			</div>
 	  </div>
     </section>
@@ -349,7 +347,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>Project Title</h2>
-                  <hr class="star-primary">
+                  <hr class="s-shape-dark" id="hr-lines">
                   <img class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
@@ -393,7 +391,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>Project Title</h2>
-                  <hr class="star-primary">
+                  <hr class="s-shape-dark">
                   <img class="img-fluid img-centered" src="img/portfolio/cake.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
@@ -437,7 +435,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>Project Title</h2>
-                  <hr class="star-primary">
+                  <hr class="s-shape-dark">
                   <img class="img-fluid img-centered" src="img/portfolio/circus.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
@@ -481,7 +479,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>Project Title</h2>
-                  <hr class="star-primary">
+                  <hr class="s-shape-dark">
                   <img class="img-fluid img-centered" src="img/portfolio/game.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
@@ -525,7 +523,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>Project Title</h2>
-                  <hr class="star-primary">
+                  <hr class="s-shape-dark">
                   <img class="img-fluid img-centered" src="img/portfolio/safe.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
@@ -569,7 +567,7 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <h2>Project Title</h2>
-                  <hr class="star-primary">
+                  <hr class="s-shape-dark">
                   <img class="img-fluid img-centered" src="img/portfolio/submarine.png" alt="">
                   <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
                     <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
