@@ -213,7 +213,7 @@ section.success {
 	background-image: url("images/homepage.jpg");
 	height: 100%;
 	width: 100%;
-	border-bottom:3px solid #000000;
+	border-bottom:1.5px solid #000000;
 }
 
 #captionName {
@@ -342,23 +342,44 @@ section.success {
 }
 #aboutContainer {
 	background-color: white;
-	border-bottom:3px solid #000000;
+	border-bottom:1.5px solid #000000;
 	color: black;
 }
 
 #skillsContainer {
 	background-color:white;
-	border-bottom: 3px solid #000000;
+	border-bottom: 1.5px solid #000000;
 }
 
 #projectsContainer {
 	background-color:white;
-	border-bottom: 3px solid #000000;
+	border-bottom: 1.5px solid #000000;
 }
 
 #contactContainer {
 	background-color:white;
-	border-bottom: 3px solid #000000;
+	border-bottom: 1.5px solid #000000;
+}
+.control-group-top,
+.control-group-other {
+	padding-left: 15px;
+	padding-right: 15px;
+	border-bottom: 1px solid #555555;
+	border-left: 1px solid #555555;
+	border-right: 1px solid #555555;
+}
+.control-group-top{
+	border-top: 1px solid #555555;
+}
+.label-text-format {
+    font-size: calc(6px + .5vw);
+    line-height: normal;
+}
+#sendMessageButton {
+    font-size: calc(10px + .3vw);
+	letter-spacing: .8px;
+	height: calc(.7vw + 40px);
+	width: calc(1.4vw + 80px);
 }
 #otherContainer {
 	color: black;
